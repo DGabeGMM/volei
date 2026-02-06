@@ -1,3 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite Vôlei</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        overflow: hidden;
+    }
+
+    .container {
+        text-align: center;
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        position: relative;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    #sim {
+        background-color: #28a745;
+        color: white;
+    }
+
+    #nao {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .celebracao {
+        font-size: 28px;
+        color: white;
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container" id="pergunta">
+    <h1>Você vai no vôlei? 🏐</h1>
+    <div class="botoes">
+        <button id="sim">Sim 😎</button>
+        <button id="nao">Não 🙄</button>
+    </div>
+</div>
+
 <script>
 const btnNao = document.getElementById("nao");
 const btnSim = document.getElementById("sim");
@@ -35,3 +113,5 @@ btnSim.addEventListener("click", () => {
 });
 </script>
 
+</body>
+</html>
